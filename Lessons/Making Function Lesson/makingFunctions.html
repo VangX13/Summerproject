@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="LessonStyles.css"/>
+    </head>
+
+    <body>
+        <!--AJ-->
+        <div id="headerbar">
+            <div class="sidebar">
+                <a href="javascript:void(0);" onclick="open_menu()" title="Menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </a>
+            </div>
+            <scan id="headertitle">Learn Java</scan>
+            <!--Implement interactive profile picture (button)-->
+            <img id="headerprofile" src="https://cdn.nerdschalk.com/wp-content/uploads/2020/09/how-to-remove-profile-picture-on-zoom-12.png?width=500">
+        </div>
+        <div id="dropdownOptions" class="menu">
+            <a href="../../homePage.html">Home</a>
+            <a href="../../lessonsListPage.html">Lessons</a>
+            <a href="../../Welcome page.htm">Logout</a>
+        </div>
+        <script>
+            function open_menu() {
+                document.getElementById("dropdownOptions").classList.toggle("show");
+            }
+        </script>
+
+        <div class="lesson">        <!--based on AJ lesson templated, discarded and added some changes-->
+            <h1>Lesson 5: Making Functions</h1>
+            
+            <div class="lessonbox">                     <!--everything inside lesson box-->
+                <div class="lessonTextContainer">       <!--allows you to move all text in box together-->
+
+
+                    <p id="lessonInfo">                                <!--dont have to pad each item-->
+                        Functions or methods group together a sequence of statements that perform
+                        a task. A function is defined inside a class and should have a descriptive
+                        name that represents what the function does. 
+                    </p>
+                    <dl>                <!--Description list, use for example text-->
+                        <dt id="examples">Here is an example of a function:</dt>     <!--dt = tag for term or name in dl-->
+                            <dd>public int getSum (int parameter, int parameter2){
+                            </dd>     
+                            <dd>int sum = value + value2;</dd> 
+                            <dd>return sum;</dd>
+                            <dd>}</dd>                                      <!--describes a dt-->
+                        <dt>Notice that the function returns an integer and there are two parameters
+                            that the function takes in. Each function has a method signature which includes 
+                            the access modifier that determines the scope to which the method can be accessed, return type, 
+                            function name, and parameters. The signature in this example is: public int 
+                            sampleFunction (int parameter, int parameter2). Ensure you return the correct 
+                            data type as defined in your method signature.
+                        </dt>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="nextbutton">
+            <a href="makingFunctions2.html">Next</a>
+        </div>
+
+    </body>
+
+</html>
